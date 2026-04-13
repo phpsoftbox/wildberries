@@ -1,0 +1,239 @@
+# Source: https://dev.wildberries.ru/ru/openapi-other/sandbox-environment
+# Verified: 2026-08-01. This snapshot intentionally contains only Marketplace FBS sandbox endpoints.
+openapi: 3.0.1
+info:
+  title: Тестовый контур
+  version: sandbox
+  x-file-name: sandbox
+security:
+  - HeaderApiKey: []
+tags:
+  - name: Маркетплейс FBS
+paths:
+  /api/v3/test/fbs/orders/make:
+    servers:
+      - url: https://marketplace-api-sandbox.wildberries.ru
+    post:
+      tags: [Маркетплейс FBS]
+      summary: Создать тестовые сборочные задания FBS
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FbsOrdersMakeRequest'
+      responses:
+        '204':
+          description: Успешно
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '403':
+          $ref: '#/components/responses/AccessDenied'
+        '409':
+          $ref: '#/components/responses/Conflict'
+  /api/v3/test/fbs/orders/{orderId}/decline:
+    servers:
+      - url: https://marketplace-api-sandbox.wildberries.ru
+    patch:
+      tags: [Маркетплейс FBS]
+      summary: Сообщить, что покупатель отменил заказ
+      parameters:
+        - $ref: '#/components/parameters/OrderId'
+      responses:
+        '204':
+          description: Успешно
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '403':
+          $ref: '#/components/responses/AccessDenied'
+        '409':
+          $ref: '#/components/responses/Conflict'
+  /api/v3/test/fbs/supplies/{supplyId}/close:
+    servers:
+      - url: https://marketplace-api-sandbox.wildberries.ru
+    patch:
+      tags: [Маркетплейс FBS]
+      summary: Закрыть поставку
+      parameters:
+        - $ref: '#/components/parameters/SupplyId'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FbsSupplyCloseRequest'
+      responses:
+        '204':
+          description: Успешно
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '403':
+          $ref: '#/components/responses/AccessDenied'
+        '409':
+          $ref: '#/components/responses/Conflict'
+  /api/v3/test/fbs/orders/{orderId}/deliver:
+    servers:
+      - url: https://marketplace-api-sandbox.wildberries.ru
+    patch:
+      tags: [Маркетплейс FBS]
+      summary: Сообщить, что заказ поступил в пункт выдачи
+      parameters:
+        - $ref: '#/components/parameters/OrderId'
+      responses:
+        '204':
+          description: Успешно
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '403':
+          $ref: '#/components/responses/AccessDenied'
+        '409':
+          $ref: '#/components/responses/Conflict'
+  /api/v3/test/fbs/orders/{orderId}/receive:
+    servers:
+      - url: https://marketplace-api-sandbox.wildberries.ru
+    patch:
+      tags: [Маркетплейс FBS]
+      summary: Сообщить, что покупатель получил заказ
+      parameters:
+        - $ref: '#/components/parameters/OrderId'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FbsOrderCodeRequest'
+      responses:
+        '204':
+          description: Успешно
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '403':
+          $ref: '#/components/responses/AccessDenied'
+        '409':
+          $ref: '#/components/responses/Conflict'
+  /api/v3/test/fbs/orders/{orderId}/reject:
+    servers:
+      - url: https://marketplace-api-sandbox.wildberries.ru
+    patch:
+      tags: [Маркетплейс FBS]
+      summary: Сообщить, что покупатель отказался от заказа
+      parameters:
+        - $ref: '#/components/parameters/OrderId'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FbsOrderCodeRequest'
+      responses:
+        '204':
+          description: Успешно
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '403':
+          $ref: '#/components/responses/AccessDenied'
+        '409':
+          $ref: '#/components/responses/Conflict'
+  /api/v3/test/fbs/orders/{orderId}/defect:
+    servers:
+      - url: https://marketplace-api-sandbox.wildberries.ru
+    patch:
+      tags: [Маркетплейс FBS]
+      summary: Сообщить, что покупатель отменил заказ из-за брака
+      parameters:
+        - $ref: '#/components/parameters/OrderId'
+      responses:
+        '204':
+          description: Успешно
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '403':
+          $ref: '#/components/responses/AccessDenied'
+        '409':
+          $ref: '#/components/responses/Conflict'
+components:
+  securitySchemes:
+    HeaderApiKey:
+      type: apiKey
+      in: header
+      name: Authorization
+  parameters:
+    OrderId:
+      name: orderId
+      in: path
+      required: true
+      schema:
+        type: integer
+        format: int64
+        minimum: 1
+    SupplyId:
+      name: supplyId
+      in: path
+      required: true
+      schema:
+        type: string
+        pattern: '^WB-GI-SAND-[0-9]+$'
+  schemas:
+    FbsOrdersMakeRequest:
+      type: object
+      required: [orders]
+      properties:
+        orders:
+          type: array
+          minItems: 1
+          maxItems: 10
+          items:
+            type: object
+            required: [sku, amount]
+            properties:
+              sku:
+                type: string
+              amount:
+                type: integer
+                minimum: 1
+    FbsSupplyCloseRequest:
+      type: object
+      required: [orderIds]
+      properties:
+        orderIds:
+          type: array
+          nullable: true
+          items:
+            type: integer
+            format: int64
+            minimum: 0
+    FbsOrderCodeRequest:
+      type: object
+      required: [code]
+      properties:
+        code:
+          type: string
+    SandboxError:
+      type: object
+      properties:
+        code:
+          type: string
+        message:
+          type: string
+        data:
+          nullable: true
+      required: [code, message]
+  responses:
+    BadRequest:
+      description: Неправильный запрос
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/SandboxError'
+    AccessDenied:
+      description: Доступ запрещён
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/SandboxError'
+    Conflict:
+      description: Конфликт
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/SandboxError'

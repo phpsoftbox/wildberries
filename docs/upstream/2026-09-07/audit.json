@@ -1,0 +1,3107 @@
+{
+  "source": {
+    "retrievedAt": "2026-09-07",
+    "sourceType": "third-party-mirror-of-wb-openapi",
+    "mirror": "https://github.com/eslazarev/wildberries-sdk",
+    "commit": "73600ac34dd8fb6436e706fc5bd4a5db9b883aac",
+    "commitDate": "2026-09-04T03:06:47Z",
+    "officialBaseUrl": "https://dev.wildberries.ru/api/swagger/yaml/ru/",
+    "officialLiveVerification": false,
+    "reason": "Official portal and YAML endpoint returned HTTP 498; browser runtime failed to initialize."
+  },
+  "baselineCommit": "a5d424758f6efaccdfa969bd03106ba73dbe1309",
+  "sections": {
+    "General": {
+      "oldFile": "01-general.yaml",
+      "newFile": "01-general.yaml",
+      "oldName": "general",
+      "newName": "general",
+      "old": 9,
+      "new": 10,
+      "wrappers": 9,
+      "missing": [
+        {
+          "method": "GET",
+          "path": "/api/common/v1/tariff-constructor/options",
+          "host": "common-api.wildberries.ru",
+          "summary": "Получить информацию об опциях Конструктора тарифов",
+          "deprecated": false,
+          "dto": null
+        }
+      ],
+      "added": [
+        {
+          "method": "GET",
+          "path": "/api/common/v1/tariff-constructor/options",
+          "host": "common-api.wildberries.ru",
+          "summary": "Получить информацию об опциях Конструктора тарифов",
+          "deprecated": false,
+          "dto": null
+        }
+      ],
+      "removed": [],
+      "changed": [
+        {
+          "method": "POST",
+          "path": "/api/v1/invite",
+          "host": "user-management-api.wildberries.ru",
+          "summary": "Создать приглашение для нового пользователя",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\General\\Api\\Invite\\CreateInviteResponse",
+          "areas": [
+            "requestBody",
+            "responses"
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/users",
+          "host": "user-management-api.wildberries.ru",
+          "summary": "Получить список активных или приглашённых пользователей продавца",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\General\\Api\\Users\\GetUsersResponse",
+          "areas": [
+            "responses"
+          ]
+        },
+        {
+          "method": "PUT",
+          "path": "/api/v1/users/access",
+          "host": "user-management-api.wildberries.ru",
+          "summary": "Изменить права доступа пользователей",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\General\\Api\\Users\\ErrorResponse",
+          "areas": [
+            "requestBody"
+          ]
+        }
+      ],
+      "noDto": [
+        {
+          "method": "GET",
+          "path": "/api/common/v1/tariff-constructor/options",
+          "host": "common-api.wildberries.ru",
+          "summary": "Получить информацию об опциях Конструктора тарифов",
+          "deprecated": false,
+          "dto": null
+        }
+      ]
+    },
+    "Products": {
+      "oldFile": "02-products.yaml",
+      "newFile": "02-items.yaml",
+      "oldName": "products",
+      "newName": "items",
+      "old": 49,
+      "new": 52,
+      "wrappers": 49,
+      "missing": [
+        {
+          "method": "POST",
+          "path": "/api/content/v1/recommendations/list",
+          "host": "content-api.wildberries.ru",
+          "summary": "Список рекомендаций в карточках товаров",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/content/v1/recommendations/set",
+          "host": "content-api.wildberries.ru",
+          "summary": "Установить рекомендации для товаров",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/discounts-prices/v1/upload/task/b2b/wholesale",
+          "host": "discounts-prices-api.wildberries.ru",
+          "summary": "Установить оптовые скидки для B2B-продаж",
+          "deprecated": false,
+          "dto": null
+        }
+      ],
+      "added": [
+        {
+          "method": "POST",
+          "path": "/api/content/v1/recommendations/list",
+          "host": "content-api.wildberries.ru",
+          "summary": "Список рекомендаций в карточках товаров",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/content/v1/recommendations/set",
+          "host": "content-api.wildberries.ru",
+          "summary": "Установить рекомендации для товаров",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/discounts-prices/v1/upload/task/b2b/wholesale",
+          "host": "discounts-prices-api.wildberries.ru",
+          "summary": "Установить оптовые скидки для B2B-продаж",
+          "deprecated": false,
+          "dto": null
+        }
+      ],
+      "removed": [],
+      "changed": [
+        {
+          "method": "GET",
+          "path": "/content/v2/object/charcs/{subjectId}",
+          "host": "content-api.wildberries.ru",
+          "summary": "Характеристики предмета",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Products\\Content\\Object\\GETContentV2ObjectCharcsSubjectIdResponse",
+          "areas": [
+            "responses"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/content/v2/get/cards/list",
+          "host": "content-api.wildberries.ru",
+          "summary": "Список карточек товаров",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Products\\Content\\Get\\POSTContentV2GetCardsListResponse",
+          "areas": [
+            "requestBody",
+            "responses"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/content/v2/cards/update",
+          "host": "content-api.wildberries.ru",
+          "summary": "Редактирование карточек товаров",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Products\\Content\\Cards\\ResponseCardCreate",
+          "areas": [
+            "responses"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/content/v2/cards/moveNm",
+          "host": "content-api.wildberries.ru",
+          "summary": "Объединение и разъединение карточек товаров",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Products\\Content\\Cards\\ResponseCardCreate",
+          "areas": [
+            "responses"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/content/v2/cards/upload",
+          "host": "content-api.wildberries.ru",
+          "summary": "Создание карточек товаров",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Products\\Content\\Cards\\ResponseCardCreate",
+          "areas": [
+            "responses"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/content/v2/cards/upload/add",
+          "host": "content-api.wildberries.ru",
+          "summary": "Создание карточек товаров с присоединением",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Products\\Content\\Cards\\ResponseCardCreate",
+          "areas": [
+            "requestBody",
+            "responses"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/api/v2/upload/task",
+          "host": "discounts-prices-api.wildberries.ru",
+          "summary": "Установить цены и скидки",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Products\\Api\\Upload\\ProductsSuccessTaskResponse",
+          "areas": [
+            "requestBody"
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/history/goods/task",
+          "host": "discounts-prices-api.wildberries.ru",
+          "summary": "Детализация обработанной загрузки",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Products\\Api\\History\\ProductsResponseGoodHistories",
+          "areas": [
+            "responses"
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/list/goods/filter",
+          "host": "discounts-prices-api.wildberries.ru",
+          "summary": "Получить товары с ценами",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Products\\Api\\List\\ProductsResponseGoodsLists",
+          "areas": [
+            "responses"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/api/v2/list/goods/filter",
+          "host": "discounts-prices-api.wildberries.ru",
+          "summary": "Получить товары с ценами по артикулам",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Products\\Api\\List\\ProductsResponseGoodsLists",
+          "areas": [
+            "responses"
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/quarantine/goods",
+          "host": "discounts-prices-api.wildberries.ru",
+          "summary": "Получить товары в карантине",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Products\\Api\\Quarantine\\ProductsResponseQuarantineGoods",
+          "areas": [
+            "responses"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/api/v3/stocks/{warehouseId}",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить остатки товаров",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Products\\Api\\Stocks\\POSTApiV3StocksWarehouseIdResponse",
+          "areas": [
+            "requestBody"
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/api/v3/offices",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить список складов WB",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Products\\Api\\Offices\\GETApiV3OfficesResponse",
+          "areas": [
+            "responses"
+          ]
+        }
+      ],
+      "noDto": [
+        {
+          "method": "POST",
+          "path": "/api/content/v1/recommendations/list",
+          "host": "content-api.wildberries.ru",
+          "summary": "Список рекомендаций в карточках товаров",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/content/v1/recommendations/set",
+          "host": "content-api.wildberries.ru",
+          "summary": "Установить рекомендации для товаров",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/discounts-prices/v1/upload/task/b2b/wholesale",
+          "host": "discounts-prices-api.wildberries.ru",
+          "summary": "Установить оптовые скидки для B2B-продаж",
+          "deprecated": false,
+          "dto": null
+        }
+      ]
+    },
+    "OrdersFbs": {
+      "oldFile": "03-orders-fbs.yaml",
+      "newFile": "03-orders-fbs.yaml",
+      "oldName": "orders-fbs",
+      "newName": "orders-fbs",
+      "old": 34,
+      "new": 47,
+      "wrappers": 34,
+      "missing": [
+        {
+          "method": "GET",
+          "path": "/api/marketplace/v3/fbs/shipping-points",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить список пунктов отгрузки поставок",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "PATCH",
+          "path": "/api/marketplace/v3/fbs/supplies/shipping-method",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Установить параметры отгрузки поставок",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "PATCH",
+          "path": "/api/marketplace/v3/fbs/supplies/waybill",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Установить ID ЭТрН поставок",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/marketplace/v3/fbs/dictionaries/countries/oksm",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить список стран ОКСМ",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "PUT",
+          "path": "/api/marketplace/v3/fbs/supplies/{supplyId}/spot",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Добавить данные СПОТ в поставку",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/fbs/supplies/spot/list",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить данные СПОТ для списка поставок",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/marketplace/v3/fbs/supplies/{supplyId}/stickers/spot",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить QR-код СПОТ",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/marketplace/v3/fbs/orders/archive",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить список архивных сборочных заданий",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/marketplace/v3/fbs/settings/autoreturns",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить настройки автовозврата продавца",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "PATCH",
+          "path": "/api/marketplace/v3/fbs/settings/autoreturns",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Обновить настройки автовозврата продавца",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/fbs/settings/autoreturns/items",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить настройки автовозврата товаров",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "PATCH",
+          "path": "/api/marketplace/v3/fbs/settings/autoreturns/items",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Обновить настройки автовозврата товаров",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/marketplace/v3/fbs/settings/autoreturns/subcategories/restricted",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить предметы, которые не хранятся на складах WB",
+          "deprecated": false,
+          "dto": null
+        }
+      ],
+      "added": [
+        {
+          "method": "GET",
+          "path": "/api/marketplace/v3/fbs/shipping-points",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить список пунктов отгрузки поставок",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "PATCH",
+          "path": "/api/marketplace/v3/fbs/supplies/shipping-method",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Установить параметры отгрузки поставок",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "PATCH",
+          "path": "/api/marketplace/v3/fbs/supplies/waybill",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Установить ID ЭТрН поставок",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/marketplace/v3/fbs/dictionaries/countries/oksm",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить список стран ОКСМ",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "PUT",
+          "path": "/api/marketplace/v3/fbs/supplies/{supplyId}/spot",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Добавить данные СПОТ в поставку",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/fbs/supplies/spot/list",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить данные СПОТ для списка поставок",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/marketplace/v3/fbs/supplies/{supplyId}/stickers/spot",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить QR-код СПОТ",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/marketplace/v3/fbs/orders/archive",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить список архивных сборочных заданий",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/marketplace/v3/fbs/settings/autoreturns",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить настройки автовозврата продавца",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "PATCH",
+          "path": "/api/marketplace/v3/fbs/settings/autoreturns",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Обновить настройки автовозврата продавца",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/fbs/settings/autoreturns/items",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить настройки автовозврата товаров",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "PATCH",
+          "path": "/api/marketplace/v3/fbs/settings/autoreturns/items",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Обновить настройки автовозврата товаров",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/marketplace/v3/fbs/settings/autoreturns/subcategories/restricted",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить предметы, которые не хранятся на складах WB",
+          "deprecated": false,
+          "dto": null
+        }
+      ],
+      "removed": [],
+      "changed": [
+        {
+          "method": "GET",
+          "path": "/api/v3/orders/new",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить список новых сборочных заданий",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\OrdersFbs\\Api\\Orders\\GETApiV3OrdersNewResponse",
+          "areas": [
+            "responses"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/api/v3/orders/status",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить статусы сборочных заданий",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\OrdersFbs\\Api\\Orders\\POSTApiV3OrdersStatusResponse",
+          "areas": [
+            "responses"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/api/v3/orders/stickers",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить стикеры сборочных заданий",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\OrdersFbs\\Api\\Orders\\POSTApiV3OrdersStickersResponse",
+          "areas": [
+            "responses"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/orders/meta",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить идентификаторы маркировки сборочных заданий",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\OrdersFbs\\Api\\Marketplace\\V3OrdersMetaAPI",
+          "areas": [
+            "requestBody",
+            "responses"
+          ]
+        },
+        {
+          "method": "DELETE",
+          "path": "/api/v3/orders/{orderId}/meta",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Удалить идентификаторы маркировки сборочного задания",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\OrdersFbs\\Api\\Passes\\Error",
+          "areas": [
+            "parameters"
+          ]
+        },
+        {
+          "method": "PUT",
+          "path": "/api/v3/orders/{orderId}/meta/sgtin",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Закрепить код маркировки Честного знака за сборочным заданием",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\OrdersFbs\\Api\\Passes\\Error",
+          "areas": [
+            "requestBody"
+          ]
+        },
+        {
+          "method": "PUT",
+          "path": "/api/v3/orders/{orderId}/meta/uin",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Закрепить УИН за сборочным заданием",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\OrdersFbs\\Api\\Passes\\Error",
+          "areas": [
+            "requestBody"
+          ]
+        },
+        {
+          "method": "PUT",
+          "path": "/api/v3/orders/{orderId}/meta/imei",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Закрепить IMEI за сборочным заданием",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\OrdersFbs\\Api\\Passes\\Error",
+          "areas": [
+            "requestBody"
+          ]
+        },
+        {
+          "method": "PUT",
+          "path": "/api/v3/orders/{orderId}/meta/gtin",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Закрепить GTIN за сборочным заданием",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\OrdersFbs\\Api\\Passes\\Error",
+          "areas": [
+            "requestBody"
+          ]
+        },
+        {
+          "method": "PUT",
+          "path": "/api/v3/orders/{orderId}/meta/expiration",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Закрепить за сборочным заданием срок годности товара",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\OrdersFbs\\Api\\Passes\\Error",
+          "areas": [
+            "requestBody"
+          ]
+        },
+        {
+          "method": "PUT",
+          "path": "/api/marketplace/v3/orders/{orderId}/meta/customs-declaration",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Закрепить номер ДТ за сборочным заданием",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\OrdersFbs\\Api\\Passes\\Error",
+          "areas": [
+            "requestBody"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/api/v3/orders/client",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Заказы с информацией по клиенту",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\OrdersFbs\\Api\\Orders\\CrossborderTurkeyClientInfoResp",
+          "areas": [
+            "responses"
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/api/v3/supplies",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить список поставок",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\OrdersFbs\\Api\\Supplies\\GETApiV3SuppliesResponse",
+          "areas": [
+            "responses"
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/api/v3/supplies/{supplyId}",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить информацию о поставке",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\OrdersFbs\\Api\\Supplies\\Supply",
+          "areas": [
+            "responses"
+          ]
+        }
+      ],
+      "noDto": [
+        {
+          "method": "GET",
+          "path": "/api/marketplace/v3/fbs/shipping-points",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить список пунктов отгрузки поставок",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "PATCH",
+          "path": "/api/marketplace/v3/fbs/supplies/shipping-method",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Установить параметры отгрузки поставок",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "PATCH",
+          "path": "/api/marketplace/v3/fbs/supplies/waybill",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Установить ID ЭТрН поставок",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/marketplace/v3/fbs/dictionaries/countries/oksm",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить список стран ОКСМ",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "PUT",
+          "path": "/api/marketplace/v3/fbs/supplies/{supplyId}/spot",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Добавить данные СПОТ в поставку",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/fbs/supplies/spot/list",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить данные СПОТ для списка поставок",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/marketplace/v3/fbs/supplies/{supplyId}/stickers/spot",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить QR-код СПОТ",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/marketplace/v3/fbs/orders/archive",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить список архивных сборочных заданий",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/marketplace/v3/fbs/settings/autoreturns",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить настройки автовозврата продавца",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "PATCH",
+          "path": "/api/marketplace/v3/fbs/settings/autoreturns",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Обновить настройки автовозврата продавца",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/fbs/settings/autoreturns/items",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить настройки автовозврата товаров",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "PATCH",
+          "path": "/api/marketplace/v3/fbs/settings/autoreturns/items",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Обновить настройки автовозврата товаров",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/marketplace/v3/fbs/settings/autoreturns/subcategories/restricted",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить предметы, которые не хранятся на складах WB",
+          "deprecated": false,
+          "dto": null
+        }
+      ]
+    },
+    "OrdersDbw": {
+      "oldFile": "04-orders-dbw.yaml",
+      "newFile": "04-orders-dbw.yaml",
+      "oldName": "orders-dbw",
+      "newName": "orders-dbw",
+      "old": 16,
+      "new": 16,
+      "wrappers": 16,
+      "missing": [
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/dbw/orders/status/deliver",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Перевести сборочные задания в доставку",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/dbw/orders/meta/details",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить идентификаторы маркировки сборочных заданий",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/dbw/orders/meta/delete",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Удалить идентификаторы маркировки сборочных заданий",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/dbw/orders/meta/sgtin",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Закрепить коды маркировки Честного знака за сборочными заданиями",
+          "deprecated": false,
+          "dto": null
+        }
+      ],
+      "added": [
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/dbw/orders/status/deliver",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Перевести сборочные задания в доставку",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/dbw/orders/meta/details",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить идентификаторы маркировки сборочных заданий",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/dbw/orders/meta/delete",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Удалить идентификаторы маркировки сборочных заданий",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/dbw/orders/meta/sgtin",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Закрепить коды маркировки Честного знака за сборочными заданиями",
+          "deprecated": false,
+          "dto": null
+        }
+      ],
+      "removed": [
+        {
+          "method": "PATCH",
+          "path": "/api/v3/dbw/orders/{orderId}/assemble",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Перевести в доставку",
+          "deprecated": false,
+          "wrappers": [
+            "OrdersDbwApi::dbwOrdersByOrderIdAssemble"
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/api/v3/dbw/orders/{orderId}/meta",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить метаданные сборочного задания",
+          "deprecated": false,
+          "wrappers": [
+            "OrdersDbwApi::dbwOrdersByOrderIdMetaGet"
+          ]
+        },
+        {
+          "method": "DELETE",
+          "path": "/api/v3/dbw/orders/{orderId}/meta",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Удалить метаданные сборочного задания",
+          "deprecated": false,
+          "wrappers": [
+            "OrdersDbwApi::dbwOrdersByOrderIdMetaDelete"
+          ]
+        },
+        {
+          "method": "PUT",
+          "path": "/api/v3/dbw/orders/{orderId}/meta/sgtin",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Закрепить за сборочным заданием код маркировки товара",
+          "deprecated": false,
+          "wrappers": [
+            "OrdersDbwApi::dbwOrdersByOrderIdMetaSgtin"
+          ]
+        }
+      ],
+      "changed": [
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/dbw/orders/client",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Информация о покупателе",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\OrdersDbw\\Api\\Marketplace\\ClientInfoResp",
+          "areas": [
+            "requestBody"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/api/v3/dbw/orders/courier",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Информация о курьере",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\OrdersDbw\\Api\\Dbw\\OrderCourierInfoResp",
+          "areas": [
+            "requestBody"
+          ]
+        },
+        {
+          "method": "PUT",
+          "path": "/api/v3/dbw/orders/{orderId}/meta/uin",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Закрепить УИН за сборочным заданием",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\OrdersDbw\\Api\\Dbw\\Error",
+          "areas": [
+            "requestBody"
+          ]
+        },
+        {
+          "method": "PUT",
+          "path": "/api/v3/dbw/orders/{orderId}/meta/imei",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Закрепить IMEI за сборочным заданием",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\OrdersDbw\\Api\\Dbw\\Error",
+          "areas": [
+            "requestBody"
+          ]
+        },
+        {
+          "method": "PUT",
+          "path": "/api/v3/dbw/orders/{orderId}/meta/gtin",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Закрепить GTIN за сборочным заданием",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\OrdersDbw\\Api\\Dbw\\Error",
+          "areas": [
+            "requestBody"
+          ]
+        }
+      ],
+      "noDto": [
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/dbw/orders/status/deliver",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Перевести сборочные задания в доставку",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/dbw/orders/meta/details",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить идентификаторы маркировки сборочных заданий",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/dbw/orders/meta/delete",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Удалить идентификаторы маркировки сборочных заданий",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/dbw/orders/meta/sgtin",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Закрепить коды маркировки Честного знака за сборочными заданиями",
+          "deprecated": false,
+          "dto": null
+        }
+      ]
+    },
+    "OrdersDbs": {
+      "oldFile": "05-orders-dbs.yaml",
+      "newFile": "05-dbs.yaml",
+      "oldName": "orders-dbs",
+      "newName": "dbs",
+      "old": 32,
+      "new": 21,
+      "wrappers": 32,
+      "missing": [
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/dbs/orders/final-price",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить цены продавца и суммы к оплате",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/dbs/orders/meta/details",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить идентификаторы маркировки сборочных заданий",
+          "deprecated": false,
+          "dto": null
+        }
+      ],
+      "added": [
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/dbs/orders/final-price",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить цены продавца и суммы к оплате",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/dbs/orders/meta/details",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить идентификаторы маркировки сборочных заданий",
+          "deprecated": false,
+          "dto": null
+        }
+      ],
+      "removed": [
+        {
+          "method": "POST",
+          "path": "/api/v3/dbs/orders/status",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить статусы сборочных заданий",
+          "deprecated": true,
+          "wrappers": [
+            "OrdersDbsApi::dbsOrdersStatus"
+          ]
+        },
+        {
+          "method": "PATCH",
+          "path": "/api/v3/dbs/orders/{orderId}/cancel",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Отменить сборочное задание",
+          "deprecated": true,
+          "wrappers": [
+            "OrdersDbsApi::dbsOrdersByOrderIdCancel"
+          ]
+        },
+        {
+          "method": "PATCH",
+          "path": "/api/v3/dbs/orders/{orderId}/confirm",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Перевести на сборку",
+          "deprecated": true,
+          "wrappers": [
+            "OrdersDbsApi::dbsOrdersByOrderIdConfirm"
+          ]
+        },
+        {
+          "method": "PATCH",
+          "path": "/api/v3/dbs/orders/{orderId}/deliver",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Перевести в доставку",
+          "deprecated": true,
+          "wrappers": [
+            "OrdersDbsApi::dbsOrdersByOrderIdDeliver"
+          ]
+        },
+        {
+          "method": "PATCH",
+          "path": "/api/v3/dbs/orders/{orderId}/receive",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Сообщить, что заказ принят покупателем",
+          "deprecated": true,
+          "wrappers": [
+            "OrdersDbsApi::dbsOrdersByOrderIdReceive"
+          ]
+        },
+        {
+          "method": "PATCH",
+          "path": "/api/v3/dbs/orders/{orderId}/reject",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Сообщить, что покупатель отказался от заказа",
+          "deprecated": true,
+          "wrappers": [
+            "OrdersDbsApi::dbsOrdersByOrderIdReject"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/dbs/orders/meta/info",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить метаданные сборочных заданий",
+          "deprecated": false,
+          "wrappers": [
+            "OrdersDbsApi::dbsOrdersMetaInfo"
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/api/v3/dbs/orders/{orderId}/meta",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить метаданные сборочного задания",
+          "deprecated": true,
+          "wrappers": [
+            "OrdersDbsApi::dbsOrdersByOrderIdMetaGet"
+          ]
+        },
+        {
+          "method": "DELETE",
+          "path": "/api/v3/dbs/orders/{orderId}/meta",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Удалить метаданные сборочного задания",
+          "deprecated": true,
+          "wrappers": [
+            "OrdersDbsApi::dbsOrdersByOrderIdMetaDelete"
+          ]
+        },
+        {
+          "method": "PUT",
+          "path": "/api/v3/dbs/orders/{orderId}/meta/sgtin",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Закрепить за сборочным заданием код маркировки товара",
+          "deprecated": true,
+          "wrappers": [
+            "OrdersDbsApi::dbsOrdersByOrderIdMetaSgtin"
+          ]
+        },
+        {
+          "method": "PUT",
+          "path": "/api/v3/dbs/orders/{orderId}/meta/uin",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Закрепить за сборочным заданием УИН (уникальный идентификационный номер)",
+          "deprecated": true,
+          "wrappers": [
+            "OrdersDbsApi::dbsOrdersByOrderIdMetaUin"
+          ]
+        },
+        {
+          "method": "PUT",
+          "path": "/api/v3/dbs/orders/{orderId}/meta/imei",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Закрепить за сборочным заданием IMEI",
+          "deprecated": true,
+          "wrappers": [
+            "OrdersDbsApi::dbsOrdersByOrderIdMetaImei"
+          ]
+        },
+        {
+          "method": "PUT",
+          "path": "/api/v3/dbs/orders/{orderId}/meta/gtin",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Закрепить за сборочным заданием GTIN",
+          "deprecated": true,
+          "wrappers": [
+            "OrdersDbsApi::dbsOrdersByOrderIdMetaGtin"
+          ]
+        }
+      ],
+      "changed": [
+        {
+          "method": "GET",
+          "path": "/api/v3/dbs/orders/new",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить список новых сборочных заданий",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\OrdersDbs\\Api\\Dbs\\GETApiV3DbsOrdersNewResponse",
+          "areas": [
+            "responses"
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/api/v3/dbs/orders",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить информацию о завершенных сборочных заданиях",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\OrdersDbs\\Api\\Dbs\\GETApiV3DbsOrdersResponse",
+          "areas": [
+            "responses"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/api/v3/dbs/orders/client",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Информация о покупателе",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\OrdersDbs\\Api\\Dbs\\DbsOnlyClientInfoResp",
+          "areas": [
+            "responses"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/dbs/orders/b2b/info",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Информация о покупателе B2B",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\OrdersDbs\\Api\\Marketplace\\ApiB2bClientInfoResponses",
+          "areas": [
+            "requestBody"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/api/v3/dbs/orders/delivery-date",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить дату и время доставки",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\OrdersDbs\\Api\\Dbs\\DeliveryDatesInfoResp",
+          "areas": [
+            "responses"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/dbs/orders/status/info",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить статусы сборочных заданий",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\OrdersDbs\\Api\\Marketplace\\ApiOrderStatusesV2",
+          "areas": [
+            "requestBody"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/dbs/orders/status/cancel",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Отменить сборочные задания",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\OrdersDbs\\Api\\Marketplace\\ApiStatusSetResponses",
+          "areas": [
+            "requestBody"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/dbs/orders/status/confirm",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Перевести сборочные задания на сборку",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\OrdersDbs\\Api\\Marketplace\\ApiStatusSetResponses",
+          "areas": [
+            "requestBody"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/dbs/orders/status/deliver",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Перевести сборочные задания в доставку",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\OrdersDbs\\Api\\Marketplace\\ApiStatusSetResponses",
+          "areas": [
+            "requestBody",
+            "responses"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/dbs/orders/meta/delete",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Удалить идентификаторы маркировки сборочных заданий",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\OrdersDbs\\Api\\Marketplace\\ApiStatusSetResponses",
+          "areas": [
+            "requestBody"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/dbs/orders/meta/sgtin",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Закрепить коды маркировки Честного знака за сборочными заданиями",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\OrdersDbs\\Api\\Marketplace\\ApiStatusSetResponses",
+          "areas": [
+            "requestBody"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/dbs/orders/meta/uin",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Закрепить УИН за сборочными заданиями",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\OrdersDbs\\Api\\Marketplace\\ApiStatusSetResponses",
+          "areas": [
+            "requestBody"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/dbs/orders/meta/imei",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Закрепить IMEI за сборочными заданиями",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\OrdersDbs\\Api\\Marketplace\\ApiStatusSetResponses",
+          "areas": [
+            "requestBody"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/dbs/orders/meta/gtin",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Закрепить GTIN за сборочными заданиями",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\OrdersDbs\\Api\\Marketplace\\ApiStatusSetResponses",
+          "areas": [
+            "requestBody"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/dbs/orders/meta/customs-declaration",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Закрепить номера ДТ за сборочными заданиями",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\OrdersDbs\\Api\\Dbs\\Error",
+          "areas": [
+            "requestBody",
+            "responses"
+          ]
+        }
+      ],
+      "noDto": [
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/dbs/orders/final-price",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить цены продавца и суммы к оплате",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/dbs/orders/meta/details",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить идентификаторы маркировки сборочных заданий",
+          "deprecated": false,
+          "dto": null
+        }
+      ]
+    },
+    "InStorePickup": {
+      "oldFile": "06-in-store-pickup.yaml",
+      "newFile": "06-in-store-pickup.yaml",
+      "oldName": "in-store-pickup",
+      "newName": "in-store-pickup",
+      "old": 28,
+      "new": 18,
+      "wrappers": 28,
+      "missing": [
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/click-collect/orders/final-price",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить цены продавца и суммы к оплате",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/click-collect/orders/meta/details",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить идентификаторы маркировки сборочных заданий",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/click-collect/orders/meta/customs-declaration",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Закрепить номера ДТ за сборочными заданиями",
+          "deprecated": false,
+          "dto": null
+        }
+      ],
+      "added": [
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/click-collect/orders/final-price",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить цены продавца и суммы к оплате",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/click-collect/orders/meta/details",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить идентификаторы маркировки сборочных заданий",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/click-collect/orders/meta/customs-declaration",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Закрепить номера ДТ за сборочными заданиями",
+          "deprecated": false,
+          "dto": null
+        }
+      ],
+      "removed": [
+        {
+          "method": "PATCH",
+          "path": "/api/v3/click-collect/orders/{orderId}/confirm",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Перевести на сборку",
+          "deprecated": true,
+          "wrappers": [
+            "InStorePickupApi::clickCollectOrdersByOrderIdConfirm"
+          ]
+        },
+        {
+          "method": "PATCH",
+          "path": "/api/v3/click-collect/orders/{orderId}/prepare",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Сообщить, что сборочное задание готово к выдаче",
+          "deprecated": true,
+          "wrappers": [
+            "InStorePickupApi::clickCollectOrdersByOrderIdPrepare"
+          ]
+        },
+        {
+          "method": "PATCH",
+          "path": "/api/v3/click-collect/orders/{orderId}/receive",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Сообщить, что заказ принят покупателем",
+          "deprecated": true,
+          "wrappers": [
+            "InStorePickupApi::clickCollectOrdersByOrderIdReceive"
+          ]
+        },
+        {
+          "method": "PATCH",
+          "path": "/api/v3/click-collect/orders/{orderId}/reject",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Сообщить, что покупатель отказался от заказа",
+          "deprecated": true,
+          "wrappers": [
+            "InStorePickupApi::clickCollectOrdersByOrderIdReject"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/api/v3/click-collect/orders/status",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить статусы сборочных заданий",
+          "deprecated": true,
+          "wrappers": [
+            "InStorePickupApi::clickCollectOrdersStatus"
+          ]
+        },
+        {
+          "method": "PATCH",
+          "path": "/api/v3/click-collect/orders/{orderId}/cancel",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Отменить сборочное задание",
+          "deprecated": true,
+          "wrappers": [
+            "InStorePickupApi::clickCollectOrdersByOrderIdCancel"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/click-collect/orders/meta/info",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить метаданные сборочных заданий",
+          "deprecated": false,
+          "wrappers": [
+            "InStorePickupApi::clickCollectOrdersMetaInfo"
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/api/v3/click-collect/orders/{orderId}/meta",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить метаданные сборочного задания",
+          "deprecated": true,
+          "wrappers": [
+            "InStorePickupApi::clickCollectOrdersByOrderIdMetaGet"
+          ]
+        },
+        {
+          "method": "DELETE",
+          "path": "/api/v3/click-collect/orders/{orderId}/meta",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Удалить метаданные сборочного задания",
+          "deprecated": true,
+          "wrappers": [
+            "InStorePickupApi::clickCollectOrdersByOrderIdMetaDelete"
+          ]
+        },
+        {
+          "method": "PUT",
+          "path": "/api/v3/click-collect/orders/{orderId}/meta/sgtin",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Закрепить за сборочным заданием код маркировки товара",
+          "deprecated": true,
+          "wrappers": [
+            "InStorePickupApi::clickCollectOrdersByOrderIdMetaSgtin"
+          ]
+        },
+        {
+          "method": "PUT",
+          "path": "/api/v3/click-collect/orders/{orderId}/meta/uin",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Закрепить за сборочным заданием УИН (уникальный идентификационный номер)",
+          "deprecated": true,
+          "wrappers": [
+            "InStorePickupApi::clickCollectOrdersByOrderIdMetaUin"
+          ]
+        },
+        {
+          "method": "PUT",
+          "path": "/api/v3/click-collect/orders/{orderId}/meta/imei",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Закрепить за сборочным заданием IMEI",
+          "deprecated": true,
+          "wrappers": [
+            "InStorePickupApi::clickCollectOrdersByOrderIdMetaImei"
+          ]
+        },
+        {
+          "method": "PUT",
+          "path": "/api/v3/click-collect/orders/{orderId}/meta/gtin",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Закрепить за сборочным заданием GTIN",
+          "deprecated": true,
+          "wrappers": [
+            "InStorePickupApi::clickCollectOrdersByOrderIdMetaGtin"
+          ]
+        }
+      ],
+      "changed": [
+        {
+          "method": "GET",
+          "path": "/api/v3/click-collect/orders/new",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить список новых сборочных заданий",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\InStorePickup\\Api\\ClickCollect\\ApiNewOrders",
+          "areas": [
+            "responses"
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/api/v3/click-collect/orders",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить информацию о завершённых сборочных заданиях",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\InStorePickup\\Api\\ClickCollect\\ApiOrders",
+          "areas": [
+            "responses"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/click-collect/orders/status/confirm",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Перевести сборочные задания на сборку",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\InStorePickup\\Api\\Marketplace\\ApiStatusSetResponses",
+          "areas": [
+            "requestBody",
+            "responses"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/click-collect/orders/status/prepare",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Сообщить, что сборочные задания готовы к выдаче",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\InStorePickup\\Api\\Marketplace\\ApiStatusSetResponses",
+          "areas": [
+            "requestBody",
+            "responses"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/click-collect/orders/status/receive",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Сообщить, что заказы приняты покупателями",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\InStorePickup\\Api\\Marketplace\\ApiStatusSetResponses",
+          "areas": [
+            "requestBody",
+            "responses"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/click-collect/orders/status/reject",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Сообщить об отказе от заказов",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\InStorePickup\\Api\\Marketplace\\ApiStatusSetResponses",
+          "areas": [
+            "requestBody",
+            "responses"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/click-collect/orders/status/info",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить статусы сборочных заданий",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\InStorePickup\\Api\\Marketplace\\ApiOrderStatusesV2",
+          "areas": [
+            "requestBody"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/click-collect/orders/status/cancel",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Отменить сборочные задания",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\InStorePickup\\Api\\Marketplace\\ApiStatusSetResponses",
+          "areas": [
+            "requestBody",
+            "responses"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/click-collect/orders/meta/delete",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Удалить идентификаторы маркировки сборочных заданий",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\InStorePickup\\Api\\Marketplace\\ApiOrdersResponses",
+          "areas": [
+            "requestBody"
+          ]
+        }
+      ],
+      "noDto": [
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/click-collect/orders/final-price",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить цены продавца и суммы к оплате",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/click-collect/orders/meta/details",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Получить идентификаторы маркировки сборочных заданий",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/marketplace/v3/click-collect/orders/meta/customs-declaration",
+          "host": "marketplace-api.wildberries.ru",
+          "summary": "Закрепить номера ДТ за сборочными заданиями",
+          "deprecated": false,
+          "dto": null
+        }
+      ]
+    },
+    "OrdersFbw": {
+      "oldFile": "07-orders-fbw.yaml",
+      "newFile": "07-orders-fbw.yaml",
+      "oldName": "orders-fbw",
+      "newName": "orders-fbw",
+      "old": 7,
+      "new": 7,
+      "wrappers": 7,
+      "missing": [],
+      "added": [],
+      "removed": [],
+      "changed": [
+        {
+          "method": "GET",
+          "path": "/api/v1/supplies/{ID}",
+          "host": "supplies-api.wildberries.ru",
+          "summary": "Детали поставки",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\OrdersFbw\\Api\\Supplies\\ModelsSupplyDetails",
+          "areas": [
+            "responses"
+          ]
+        }
+      ],
+      "noDto": []
+    },
+    "Promotion": {
+      "oldFile": "08-promotion.yaml",
+      "newFile": "08-promotion.yaml",
+      "oldName": "promotion",
+      "newName": "promotion",
+      "old": 37,
+      "new": 39,
+      "wrappers": 37,
+      "missing": [
+        {
+          "method": "GET",
+          "path": "/api/advert/v1/config",
+          "host": "advert-api.wildberries.ru",
+          "summary": "Конфигурационные значения продвижения",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/advert/v1/normquery/bids",
+          "host": "advert-api.wildberries.ru",
+          "summary": "Установить ставки для поисковых кластеров в валюте аккаунта продавца",
+          "deprecated": false,
+          "dto": null
+        }
+      ],
+      "added": [
+        {
+          "method": "GET",
+          "path": "/api/advert/v1/config",
+          "host": "advert-api.wildberries.ru",
+          "summary": "Конфигурационные значения продвижения",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/advert/v1/normquery/bids",
+          "host": "advert-api.wildberries.ru",
+          "summary": "Установить ставки для поисковых кластеров в валюте аккаунта продавца",
+          "deprecated": false,
+          "dto": null
+        }
+      ],
+      "removed": [],
+      "changed": [
+        {
+          "method": "GET",
+          "path": "/api/advert/v2/adverts",
+          "host": "advert-api.wildberries.ru",
+          "summary": "Информация о кампаниях",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Promotion\\Api\\Advert\\GetAdverts",
+          "areas": [
+            "responses"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/api/advert/v1/bids/min",
+          "host": "advert-api.wildberries.ru",
+          "summary": "Минимальные ставки для карточек товаров",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Promotion\\Api\\Advert\\POSTApiAdvertV1BidsMinResponse",
+          "areas": [
+            "responses"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/adv/v2/seacat/save-ad",
+          "host": "advert-api.wildberries.ru",
+          "summary": "Создать кампанию",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Promotion\\Adv\\Seacat\\POSTAdvV2SeacatSaveAdResponse",
+          "areas": [
+            "requestBody"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/adv/v2/supplier/nms",
+          "host": "advert-api.wildberries.ru",
+          "summary": "Карточки товаров для кампаний",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Promotion\\Adv\\Supplier\\POSTAdvV2SupplierNmsResponse",
+          "areas": [
+            "responses"
+          ]
+        },
+        {
+          "method": "PATCH",
+          "path": "/api/advert/v1/bids",
+          "host": "advert-api.wildberries.ru",
+          "summary": "Изменение ставок в кампаниях",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Promotion\\Api\\Advert\\PATCHApiAdvertV1BidsResponse",
+          "areas": [
+            "responses"
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/adv/v1/balance",
+          "host": "advert-api.wildberries.ru",
+          "summary": "Баланс",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Promotion\\Adv\\Balance\\GETAdvV1BalanceResponse",
+          "areas": [
+            "responses"
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/adv/v1/budget",
+          "host": "advert-api.wildberries.ru",
+          "summary": "Бюджет кампании",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Promotion\\Adv\\Budget\\GETAdvV1BudgetResponse",
+          "areas": [
+            "responses"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/adv/v1/budget/deposit",
+          "host": "advert-api.wildberries.ru",
+          "summary": "Пополнение бюджета кампании",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Promotion\\Adv\\Budget\\POSTAdvV1BudgetDepositResponse",
+          "areas": [
+            "requestBody",
+            "responses"
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/adv/v1/payments",
+          "host": "advert-api.wildberries.ru",
+          "summary": "Получение истории пополнений счёта",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Promotion\\Adv\\Payments\\GETAdvV1PaymentsResponse",
+          "areas": [
+            "responses"
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/api/advert/v0/bids/recommendations",
+          "host": "advert-api.wildberries.ru",
+          "summary": "Рекомендуемые ставки для карточек товаров и поисковых кластеров",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Promotion\\Api\\Advert\\V0BidsRecommendationsResponse",
+          "areas": [
+            "responses"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/adv/v0/normquery/stats",
+          "host": "advert-api.wildberries.ru",
+          "summary": "Статистика поисковых кластеров",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Promotion\\Adv\\Normquery\\V0GetNormQueryStatsResponse",
+          "areas": [
+            "responses"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/adv/v0/normquery/get-bids",
+          "host": "advert-api.wildberries.ru",
+          "summary": "Список ставок поисковых кластеров",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Promotion\\Adv\\Normquery\\V0GetNormQueryBidsResponse",
+          "areas": [
+            "responses"
+          ]
+        },
+        {
+          "method": "DELETE",
+          "path": "/adv/v0/normquery/bids",
+          "host": "advert-api.wildberries.ru",
+          "summary": "Удалить ставки поисковых кластеров",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Promotion\\Adv\\Auction\\Response400",
+          "areas": [
+            "requestBody"
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/adv/v1/count",
+          "host": "advert-media-api.wildberries.ru",
+          "summary": "Количество медиакампаний",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Promotion\\Adv\\Count\\GETAdvV1CountResponse",
+          "areas": [
+            "responses"
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/adv/v1/adverts",
+          "host": "advert-media-api.wildberries.ru",
+          "summary": "Список медиакампаний",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Promotion\\Adv\\Adverts\\GETAdvV1AdvertsResponse",
+          "areas": [
+            "parameters"
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/adv/v3/fullstats",
+          "host": "advert-api.wildberries.ru",
+          "summary": "Статистика кампаний",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Promotion\\Adv\\Fullstats\\ResponseFullStats",
+          "areas": [
+            "responses"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/adv/v1/stats",
+          "host": "advert-media-api.wildberries.ru",
+          "summary": "Статистика медиакампаний",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Promotion\\Adv\\Stats\\POSTAdvV1StatsResponse",
+          "areas": [
+            "responses"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/adv/v0/normquery/list",
+          "host": "advert-api.wildberries.ru",
+          "summary": "Списки активных и неактивных поисковых кластеров",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Promotion\\Adv\\Normquery\\V0GetNormQueryListResponse",
+          "areas": [
+            "responses"
+          ]
+        }
+      ],
+      "noDto": [
+        {
+          "method": "GET",
+          "path": "/api/advert/v1/config",
+          "host": "advert-api.wildberries.ru",
+          "summary": "Конфигурационные значения продвижения",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/advert/v1/normquery/bids",
+          "host": "advert-api.wildberries.ru",
+          "summary": "Установить ставки для поисковых кластеров в валюте аккаунта продавца",
+          "deprecated": false,
+          "dto": null
+        }
+      ]
+    },
+    "Communications": {
+      "oldFile": "09-communications.yaml",
+      "newFile": "09-communications.yaml",
+      "oldName": "communications",
+      "newName": "communications",
+      "old": 25,
+      "new": 25,
+      "wrappers": 25,
+      "missing": [],
+      "added": [],
+      "removed": [],
+      "changed": [
+        {
+          "method": "GET",
+          "path": "/api/v1/feedbacks/count",
+          "host": "feedbacks-api.wildberries.ru",
+          "summary": "Количество отзывов",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Communications\\Api\\Feedbacks\\GETApiV1FeedbacksCountResponse",
+          "areas": [
+            "parameters"
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/seller/chats",
+          "host": "buyer-chat-api.wildberries.ru",
+          "summary": "Список чатов",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Communications\\Api\\Seller\\ChatsResponse",
+          "areas": [
+            "responses"
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/seller/events",
+          "host": "buyer-chat-api.wildberries.ru",
+          "summary": "События чатов",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Communications\\Api\\Seller\\EventsResponse",
+          "areas": [
+            "responses"
+          ]
+        }
+      ],
+      "noDto": []
+    },
+    "Tariffs": {
+      "oldFile": "10-tariffs.yaml",
+      "newFile": "10-rates.yaml",
+      "oldName": "tariffs",
+      "newName": "rates",
+      "old": 5,
+      "new": 5,
+      "wrappers": 5,
+      "missing": [],
+      "added": [],
+      "removed": [],
+      "changed": [
+        {
+          "method": "GET",
+          "path": "/api/v1/tariffs/box",
+          "host": "common-api.wildberries.ru",
+          "summary": "Тарифы для коробов",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Tariffs\\Api\\TariffsBoxResponse",
+          "areas": [
+            "responses"
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/tariffs/pallet",
+          "host": "common-api.wildberries.ru",
+          "summary": "Тарифы для монопаллет",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Tariffs\\Api\\TariffsPalletResponse",
+          "areas": [
+            "responses"
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/tariffs/return",
+          "host": "common-api.wildberries.ru",
+          "summary": "Тарифы на возврат",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Tariffs\\Api\\ReturnTariffsResponse",
+          "areas": [
+            "responses"
+          ]
+        }
+      ],
+      "noDto": []
+    },
+    "Analytics": {
+      "oldFile": "11-analytics.yaml",
+      "newFile": "11-analytics.yaml",
+      "oldName": "analytics",
+      "newName": "analytics",
+      "old": 17,
+      "new": 20,
+      "wrappers": 17,
+      "missing": [
+        {
+          "method": "POST",
+          "path": "/api/analytics/v1/stocks-report/seller-warehouses",
+          "host": "seller-analytics-api.wildberries.ru",
+          "summary": "Остатки на складах продавца",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/analytics/v2/item-rating",
+          "host": "seller-analytics-api.wildberries.ru",
+          "summary": "Получить отчёт",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/analytics/v1/order-feed",
+          "host": "seller-analytics-api.wildberries.ru",
+          "summary": "Получить отчёт",
+          "deprecated": false,
+          "dto": null
+        }
+      ],
+      "added": [
+        {
+          "method": "POST",
+          "path": "/api/analytics/v1/stocks-report/seller-warehouses",
+          "host": "seller-analytics-api.wildberries.ru",
+          "summary": "Остатки на складах продавца",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/analytics/v2/item-rating",
+          "host": "seller-analytics-api.wildberries.ru",
+          "summary": "Получить отчёт",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/analytics/v1/order-feed",
+          "host": "seller-analytics-api.wildberries.ru",
+          "summary": "Получить отчёт",
+          "deprecated": false,
+          "dto": null
+        }
+      ],
+      "removed": [],
+      "changed": [
+        {
+          "method": "POST",
+          "path": "/api/v2/nm-report/downloads",
+          "host": "seller-analytics-api.wildberries.ru",
+          "summary": "Создать отчёт",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Analytics\\Api\\NmReport\\NmReportCreateReportResponse",
+          "areas": [
+            "requestBody"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/api/analytics/v1/stocks-report/wb-warehouses",
+          "host": "seller-analytics-api.wildberries.ru",
+          "summary": "Остатки на складах WB",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Analytics\\Api\\PostV1StocksReportWbWarehousesResponse",
+          "areas": [
+            "responses"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/api/v2/stocks-report/products/sizes",
+          "host": "seller-analytics-api.wildberries.ru",
+          "summary": "Данные по размерам",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Analytics\\Api\\StocksReport\\POSTApiV2StocksReportProductsSizesResponse",
+          "areas": [
+            "requestBody"
+          ]
+        },
+        {
+          "method": "POST",
+          "path": "/api/v2/stocks-report/offices",
+          "host": "seller-analytics-api.wildberries.ru",
+          "summary": "Данные по складам",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Analytics\\Api\\StocksReport\\POSTApiV2StocksReportOfficesResponse",
+          "areas": [
+            "requestBody"
+          ]
+        }
+      ],
+      "noDto": [
+        {
+          "method": "POST",
+          "path": "/api/analytics/v1/stocks-report/seller-warehouses",
+          "host": "seller-analytics-api.wildberries.ru",
+          "summary": "Остатки на складах продавца",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/analytics/v2/item-rating",
+          "host": "seller-analytics-api.wildberries.ru",
+          "summary": "Получить отчёт",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/analytics/v1/order-feed",
+          "host": "seller-analytics-api.wildberries.ru",
+          "summary": "Получить отчёт",
+          "deprecated": false,
+          "dto": null
+        }
+      ]
+    },
+    "Reports": {
+      "oldFile": "12-reports.yaml",
+      "newFile": "12-reports.yaml",
+      "oldName": "reports",
+      "newName": "reports",
+      "old": 25,
+      "new": 23,
+      "wrappers": 25,
+      "missing": [],
+      "added": [],
+      "removed": [
+        {
+          "method": "GET",
+          "path": "/api/v1/supplier/stocks",
+          "host": "statistics-api.wildberries.ru",
+          "summary": "Склады",
+          "deprecated": true,
+          "wrappers": [
+            "ReportsApi::supplierStocks"
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/analytics/banned-products/shadowed",
+          "host": "seller-analytics-api.wildberries.ru",
+          "summary": "Скрытые из каталога",
+          "deprecated": false,
+          "wrappers": [
+            "ReportsApi::analyticsBannedProductsShadowed"
+          ]
+        }
+      ],
+      "changed": [
+        {
+          "method": "GET",
+          "path": "/api/v1/supplier/orders",
+          "host": "statistics-api.wildberries.ru",
+          "summary": "Заказы",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Reports\\Api\\Supplier\\GETApiV1SupplierOrdersResponse",
+          "areas": [
+            "parameters"
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/supplier/sales",
+          "host": "statistics-api.wildberries.ru",
+          "summary": "Продажи",
+          "deprecated": false,
+          "dto": "PhpSoftBox\\Wildberries\\Dto\\Reports\\Api\\Supplier\\GETApiV1SupplierSalesResponse",
+          "areas": [
+            "parameters"
+          ]
+        }
+      ],
+      "noDto": []
+    },
+    "Finances": {
+      "oldFile": "13-finances.yaml",
+      "newFile": "13-finances.yaml",
+      "oldName": "finances",
+      "newName": "finances",
+      "old": 6,
+      "new": 11,
+      "wrappers": 6,
+      "missing": [
+        {
+          "method": "POST",
+          "path": "/api/finance/v1/sales-reports/list",
+          "host": "finance-api.wildberries.ru",
+          "summary": "Список отчётов реализации",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/finance/v1/sales-reports/detailed/{reportId}",
+          "host": "finance-api.wildberries.ru",
+          "summary": "Детализации к отчётам реализации по ID отчётов",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/finance/v1/sales-reports/detailed",
+          "host": "finance-api.wildberries.ru",
+          "summary": "Детализации к отчётам реализации за период",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/finance/v1/acquiring/list",
+          "host": "finance-api.wildberries.ru",
+          "summary": "Список отчётов об издержках на приём платежей",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/finance/v1/acquiring/detailed/{reportId}",
+          "host": "finance-api.wildberries.ru",
+          "summary": "Детализации к отчётам об издержках на приём платежей по ID отчётов",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/finance/v1/acquiring/detailed",
+          "host": "finance-api.wildberries.ru",
+          "summary": "Детализации к отчётам об издержках на приём платежей за период",
+          "deprecated": false,
+          "dto": null
+        }
+      ],
+      "added": [
+        {
+          "method": "POST",
+          "path": "/api/finance/v1/sales-reports/list",
+          "host": "finance-api.wildberries.ru",
+          "summary": "Список отчётов реализации",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/finance/v1/sales-reports/detailed/{reportId}",
+          "host": "finance-api.wildberries.ru",
+          "summary": "Детализации к отчётам реализации по ID отчётов",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/finance/v1/sales-reports/detailed",
+          "host": "finance-api.wildberries.ru",
+          "summary": "Детализации к отчётам реализации за период",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/finance/v1/acquiring/list",
+          "host": "finance-api.wildberries.ru",
+          "summary": "Список отчётов об издержках на приём платежей",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/finance/v1/acquiring/detailed/{reportId}",
+          "host": "finance-api.wildberries.ru",
+          "summary": "Детализации к отчётам об издержках на приём платежей по ID отчётов",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/finance/v1/acquiring/detailed",
+          "host": "finance-api.wildberries.ru",
+          "summary": "Детализации к отчётам об издержках на приём платежей за период",
+          "deprecated": false,
+          "dto": null
+        }
+      ],
+      "removed": [
+        {
+          "method": "GET",
+          "path": "/api/v5/supplier/reportDetailByPeriod",
+          "host": "statistics-api.wildberries.ru",
+          "summary": "Отчёт о продажах по реализации",
+          "deprecated": false,
+          "wrappers": [
+            "FinancesApi::supplierReportDetailByPeriod"
+          ]
+        }
+      ],
+      "changed": [],
+      "noDto": [
+        {
+          "method": "POST",
+          "path": "/api/finance/v1/sales-reports/list",
+          "host": "finance-api.wildberries.ru",
+          "summary": "Список отчётов реализации",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/finance/v1/sales-reports/detailed/{reportId}",
+          "host": "finance-api.wildberries.ru",
+          "summary": "Детализации к отчётам реализации по ID отчётов",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/finance/v1/sales-reports/detailed",
+          "host": "finance-api.wildberries.ru",
+          "summary": "Детализации к отчётам реализации за период",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/finance/v1/acquiring/list",
+          "host": "finance-api.wildberries.ru",
+          "summary": "Список отчётов об издержках на приём платежей",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/finance/v1/acquiring/detailed/{reportId}",
+          "host": "finance-api.wildberries.ru",
+          "summary": "Детализации к отчётам об издержках на приём платежей по ID отчётов",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/finance/v1/acquiring/detailed",
+          "host": "finance-api.wildberries.ru",
+          "summary": "Детализации к отчётам об издержках на приём платежей за период",
+          "deprecated": false,
+          "dto": null
+        }
+      ]
+    },
+    "Digital": {
+      "oldFile": null,
+      "newFile": "14-wbd.yaml",
+      "oldName": null,
+      "newName": "wbd",
+      "old": 0,
+      "new": 22,
+      "wrappers": 0,
+      "missing": [
+        {
+          "method": "POST",
+          "path": "/api/v1/keys-api/keys",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Добавить ключи активации",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "DELETE",
+          "path": "/api/v1/keys-api/keys",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Удалить ключи активации",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/keys-api/keys/redeemed",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Получить купленные ключи",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/offer/keys/{offer_id}",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Получить количество ключей для предложения",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/offer/keys/{offer_id}/list",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Получить список ключей",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/offers",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Создать новое предложение",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/offers/thumb",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Добавить или обновить обложку предложения",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/offers/{offer_id}",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Редактировать предложение",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/offers/{offer_id}",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Получить информацию о предложении",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/offers/author",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Получить список своих предложений",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/offer/price/{offer_id}",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Обновить цену",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/offer/{offer_id}",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Обновить статус",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/catalog",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Получить категории и их подкатегории",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/content/illustration",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Загрузить обложку контента",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/content/upload/init",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Инициализировать новый контент",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/content/upload/chunk",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Загрузить контент (файл)",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/content/author/{content_id}",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Редактировать контент",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/content/author/{content_id}",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Получить информацию о контенте",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/content/author",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Получить список своего контента",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/content/download/{uri}",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Скачать контент",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/content/delete",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Удалить контент",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/content/gallery",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Загрузить медиафайлы для предложения",
+          "deprecated": false,
+          "dto": null
+        }
+      ],
+      "added": [
+        {
+          "method": "POST",
+          "path": "/api/v1/keys-api/keys",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Добавить ключи активации",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "DELETE",
+          "path": "/api/v1/keys-api/keys",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Удалить ключи активации",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/keys-api/keys/redeemed",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Получить купленные ключи",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/offer/keys/{offer_id}",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Получить количество ключей для предложения",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/offer/keys/{offer_id}/list",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Получить список ключей",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/offers",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Создать новое предложение",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/offers/thumb",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Добавить или обновить обложку предложения",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/offers/{offer_id}",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Редактировать предложение",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/offers/{offer_id}",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Получить информацию о предложении",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/offers/author",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Получить список своих предложений",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/offer/price/{offer_id}",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Обновить цену",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/offer/{offer_id}",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Обновить статус",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/catalog",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Получить категории и их подкатегории",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/content/illustration",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Загрузить обложку контента",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/content/upload/init",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Инициализировать новый контент",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/content/upload/chunk",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Загрузить контент (файл)",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/content/author/{content_id}",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Редактировать контент",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/content/author/{content_id}",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Получить информацию о контенте",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/content/author",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Получить список своего контента",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/content/download/{uri}",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Скачать контент",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/content/delete",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Удалить контент",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/content/gallery",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Загрузить медиафайлы для предложения",
+          "deprecated": false,
+          "dto": null
+        }
+      ],
+      "removed": [],
+      "changed": [],
+      "noDto": [
+        {
+          "method": "POST",
+          "path": "/api/v1/keys-api/keys",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Добавить ключи активации",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "DELETE",
+          "path": "/api/v1/keys-api/keys",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Удалить ключи активации",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/keys-api/keys/redeemed",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Получить купленные ключи",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/offer/keys/{offer_id}",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Получить количество ключей для предложения",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/offer/keys/{offer_id}/list",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Получить список ключей",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/offers",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Создать новое предложение",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/offers/thumb",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Добавить или обновить обложку предложения",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/offers/{offer_id}",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Редактировать предложение",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/offers/{offer_id}",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Получить информацию о предложении",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/offers/author",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Получить список своих предложений",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/offer/price/{offer_id}",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Обновить цену",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/offer/{offer_id}",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Обновить статус",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/catalog",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Получить категории и их подкатегории",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/content/illustration",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Загрузить обложку контента",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/content/upload/init",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Инициализировать новый контент",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/content/upload/chunk",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Загрузить контент (файл)",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/content/author/{content_id}",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Редактировать контент",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/content/author/{content_id}",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Получить информацию о контенте",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/content/author",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Получить список своего контента",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/content/download/{uri}",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Скачать контент",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/content/delete",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Удалить контент",
+          "deprecated": false,
+          "dto": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/content/gallery",
+          "host": "devapi-digital.wildberries.ru",
+          "summary": "Загрузить медиафайлы для предложения",
+          "deprecated": false,
+          "dto": null
+        }
+      ]
+    }
+  },
+  "staleWrappers": {
+    "statistics-api.wildberries.ru GET /api/v5/supplier/reportDetailByPeriod": [
+      "FinancesApi::supplierReportDetailByPeriod"
+    ],
+    "marketplace-api.wildberries.ru PATCH /api/v3/click-collect/orders/{}/confirm": [
+      "InStorePickupApi::clickCollectOrdersByOrderIdConfirm"
+    ],
+    "marketplace-api.wildberries.ru PATCH /api/v3/click-collect/orders/{}/prepare": [
+      "InStorePickupApi::clickCollectOrdersByOrderIdPrepare"
+    ],
+    "marketplace-api.wildberries.ru PATCH /api/v3/click-collect/orders/{}/receive": [
+      "InStorePickupApi::clickCollectOrdersByOrderIdReceive"
+    ],
+    "marketplace-api.wildberries.ru PATCH /api/v3/click-collect/orders/{}/reject": [
+      "InStorePickupApi::clickCollectOrdersByOrderIdReject"
+    ],
+    "marketplace-api.wildberries.ru POST /api/v3/click-collect/orders/status": [
+      "InStorePickupApi::clickCollectOrdersStatus"
+    ],
+    "marketplace-api.wildberries.ru PATCH /api/v3/click-collect/orders/{}/cancel": [
+      "InStorePickupApi::clickCollectOrdersByOrderIdCancel"
+    ],
+    "marketplace-api.wildberries.ru POST /api/marketplace/v3/click-collect/orders/meta/info": [
+      "InStorePickupApi::clickCollectOrdersMetaInfo"
+    ],
+    "marketplace-api.wildberries.ru GET /api/v3/click-collect/orders/{}/meta": [
+      "InStorePickupApi::clickCollectOrdersByOrderIdMetaGet"
+    ],
+    "marketplace-api.wildberries.ru DELETE /api/v3/click-collect/orders/{}/meta": [
+      "InStorePickupApi::clickCollectOrdersByOrderIdMetaDelete"
+    ],
+    "marketplace-api.wildberries.ru PUT /api/v3/click-collect/orders/{}/meta/sgtin": [
+      "InStorePickupApi::clickCollectOrdersByOrderIdMetaSgtin"
+    ],
+    "marketplace-api.wildberries.ru PUT /api/v3/click-collect/orders/{}/meta/uin": [
+      "InStorePickupApi::clickCollectOrdersByOrderIdMetaUin"
+    ],
+    "marketplace-api.wildberries.ru PUT /api/v3/click-collect/orders/{}/meta/imei": [
+      "InStorePickupApi::clickCollectOrdersByOrderIdMetaImei"
+    ],
+    "marketplace-api.wildberries.ru PUT /api/v3/click-collect/orders/{}/meta/gtin": [
+      "InStorePickupApi::clickCollectOrdersByOrderIdMetaGtin"
+    ],
+    "marketplace-api.wildberries.ru POST /api/v3/dbs/orders/status": [
+      "OrdersDbsApi::dbsOrdersStatus"
+    ],
+    "marketplace-api.wildberries.ru PATCH /api/v3/dbs/orders/{}/cancel": [
+      "OrdersDbsApi::dbsOrdersByOrderIdCancel"
+    ],
+    "marketplace-api.wildberries.ru PATCH /api/v3/dbs/orders/{}/confirm": [
+      "OrdersDbsApi::dbsOrdersByOrderIdConfirm"
+    ],
+    "marketplace-api.wildberries.ru PATCH /api/v3/dbs/orders/{}/deliver": [
+      "OrdersDbsApi::dbsOrdersByOrderIdDeliver"
+    ],
+    "marketplace-api.wildberries.ru PATCH /api/v3/dbs/orders/{}/receive": [
+      "OrdersDbsApi::dbsOrdersByOrderIdReceive"
+    ],
+    "marketplace-api.wildberries.ru PATCH /api/v3/dbs/orders/{}/reject": [
+      "OrdersDbsApi::dbsOrdersByOrderIdReject"
+    ],
+    "marketplace-api.wildberries.ru POST /api/marketplace/v3/dbs/orders/meta/info": [
+      "OrdersDbsApi::dbsOrdersMetaInfo"
+    ],
+    "marketplace-api.wildberries.ru GET /api/v3/dbs/orders/{}/meta": [
+      "OrdersDbsApi::dbsOrdersByOrderIdMetaGet"
+    ],
+    "marketplace-api.wildberries.ru DELETE /api/v3/dbs/orders/{}/meta": [
+      "OrdersDbsApi::dbsOrdersByOrderIdMetaDelete"
+    ],
+    "marketplace-api.wildberries.ru PUT /api/v3/dbs/orders/{}/meta/sgtin": [
+      "OrdersDbsApi::dbsOrdersByOrderIdMetaSgtin"
+    ],
+    "marketplace-api.wildberries.ru PUT /api/v3/dbs/orders/{}/meta/uin": [
+      "OrdersDbsApi::dbsOrdersByOrderIdMetaUin"
+    ],
+    "marketplace-api.wildberries.ru PUT /api/v3/dbs/orders/{}/meta/imei": [
+      "OrdersDbsApi::dbsOrdersByOrderIdMetaImei"
+    ],
+    "marketplace-api.wildberries.ru PUT /api/v3/dbs/orders/{}/meta/gtin": [
+      "OrdersDbsApi::dbsOrdersByOrderIdMetaGtin"
+    ],
+    "marketplace-api.wildberries.ru PATCH /api/v3/dbw/orders/{}/assemble": [
+      "OrdersDbwApi::dbwOrdersByOrderIdAssemble"
+    ],
+    "marketplace-api.wildberries.ru GET /api/v3/dbw/orders/{}/meta": [
+      "OrdersDbwApi::dbwOrdersByOrderIdMetaGet"
+    ],
+    "marketplace-api.wildberries.ru DELETE /api/v3/dbw/orders/{}/meta": [
+      "OrdersDbwApi::dbwOrdersByOrderIdMetaDelete"
+    ],
+    "marketplace-api.wildberries.ru PUT /api/v3/dbw/orders/{}/meta/sgtin": [
+      "OrdersDbwApi::dbwOrdersByOrderIdMetaSgtin"
+    ],
+    "statistics-api.wildberries.ru GET /api/v1/supplier/stocks": [
+      "ReportsApi::supplierStocks"
+    ],
+    "seller-analytics-api.wildberries.ru GET /api/v1/analytics/banned-products/shadowed": [
+      "ReportsApi::analyticsBannedProductsShadowed"
+    ]
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "retrievedAt": "2026-09-07",
+  "sourceType": "third-party-mirror-of-wb-openapi",
+  "mirror": "https://github.com/eslazarev/wildberries-sdk",
+  "commit": "73600ac34dd8fb6436e706fc5bd4a5db9b883aac",
+  "commitDate": "2026-09-04T03:06:47Z",
+  "officialBaseUrl": "https://dev.wildberries.ru/api/swagger/yaml/ru/",
+  "officialLiveVerification": false,
+  "reason": "Official portal and YAML endpoint returned HTTP 498; browser runtime failed to initialize.",
+  "files": {
+    "01-general.yaml": {
+      "sha256": "e3b8467e7288f08bd42b7c81a4b568919536ef536da730346ee201a02e3d68d3",
+      "bytes": 76896,
+      "name": "general",
+      "hosts": [
+        "https://common-api.wildberries.ru",
+        "https://feedbacks-api.wildberries.ru",
+        "https://user-management-api.wildberries.ru"
+      ],
+      "refs": 22,
+      "unresolved": [],
+      "url": "https://raw.githubusercontent.com/eslazarev/wildberries-sdk/73600ac34dd8fb6436e706fc5bd4a5db9b883aac/specs/01-general.yaml",
+      "officialUrl": "https://dev.wildberries.ru/api/swagger/yaml/ru/01-general.yaml?region=ru"
+    },
+    "02-items.yaml": {
+      "sha256": "5244b25d82bb8eafb01f65392f017bfb27040029b6c20b97e13c186323df9066",
+      "bytes": 392496,
+      "name": "items",
+      "hosts": [
+        "https://content-api.wildberries.ru",
+        "https://content-api-sandbox.wildberries.ru",
+        "https://discounts-prices-api.wildberries.ru",
+        "https://discounts-prices-api-sandbox.wildberries.ru",
+        "https://marketplace-api.wildberries.ru",
+        "https://marketplace-api-sandbox.wildberries.ru"
+      ],
+      "refs": 173,
+      "unresolved": [],
+      "url": "https://raw.githubusercontent.com/eslazarev/wildberries-sdk/73600ac34dd8fb6436e706fc5bd4a5db9b883aac/specs/02-items.yaml",
+      "officialUrl": "https://dev.wildberries.ru/api/swagger/yaml/ru/02-items.yaml?region=ru"
+    },
+    "03-orders-fbs.yaml": {
+      "sha256": "62d8384308e91c2df19f0f898d69371348ba00b234cf4efd470ed7eac0e588e4",
+      "bytes": 285430,
+      "name": "orders-fbs",
+      "hosts": [
+        "https://marketplace-api.wildberries.ru",
+        "https://marketplace-api-sandbox.wildberries.ru"
+      ],
+      "refs": 76,
+      "unresolved": [],
+      "url": "https://raw.githubusercontent.com/eslazarev/wildberries-sdk/73600ac34dd8fb6436e706fc5bd4a5db9b883aac/specs/03-orders-fbs.yaml",
+      "officialUrl": "https://dev.wildberries.ru/api/swagger/yaml/ru/03-orders-fbs.yaml?region=ru"
+    },
+    "04-orders-dbw.yaml": {
+      "sha256": "968bd0823e1df86a5aef65609fe47a46dd0a06c2ff0c0976d6f24d92c07e47f9",
+      "bytes": 106191,
+      "name": "orders-dbw",
+      "hosts": [
+        "https://marketplace-api.wildberries.ru"
+      ],
+      "refs": 38,
+      "unresolved": [],
+      "url": "https://raw.githubusercontent.com/eslazarev/wildberries-sdk/73600ac34dd8fb6436e706fc5bd4a5db9b883aac/specs/04-orders-dbw.yaml",
+      "officialUrl": "https://dev.wildberries.ru/api/swagger/yaml/ru/04-orders-dbw.yaml?region=ru"
+    },
+    "05-dbs.yaml": {
+      "sha256": "df47207784728e4edad70524cbde8209af6093ad8797c45961a88c9398cfdf5e",
+      "bytes": 143917,
+      "name": "dbs",
+      "hosts": [
+        "https://marketplace-api.wildberries.ru",
+        "https://marketplace-api-sandbox.wildberries.ru"
+      ],
+      "refs": 57,
+      "unresolved": [],
+      "url": "https://raw.githubusercontent.com/eslazarev/wildberries-sdk/73600ac34dd8fb6436e706fc5bd4a5db9b883aac/specs/05-dbs.yaml",
+      "officialUrl": "https://dev.wildberries.ru/api/swagger/yaml/ru/05-dbs.yaml?region=ru"
+    },
+    "06-in-store-pickup.yaml": {
+      "sha256": "ec013121d378ecaae9bfbafe16fba0726ebb4841608b76559e7f4f16283d9c2e",
+      "bytes": 117593,
+      "name": "in-store-pickup",
+      "hosts": [
+        "https://marketplace-api.wildberries.ru",
+        "https://marketplace-api-sandbox.wildberries.ru"
+      ],
+      "refs": 55,
+      "unresolved": [],
+      "url": "https://raw.githubusercontent.com/eslazarev/wildberries-sdk/73600ac34dd8fb6436e706fc5bd4a5db9b883aac/specs/06-in-store-pickup.yaml",
+      "officialUrl": "https://dev.wildberries.ru/api/swagger/yaml/ru/06-in-store-pickup.yaml?region=ru"
+    },
+    "07-orders-fbw.yaml": {
+      "sha256": "ed21497a8108e01b9bfcd9881bd6d745298715b0c25afc4e5cc12e10c36542bc",
+      "bytes": 51339,
+      "name": "orders-fbw",
+      "hosts": [
+        "https://supplies-api.wildberries.ru",
+        "https://supplies-api-sandbox.wildberries.ru"
+      ],
+      "refs": 33,
+      "unresolved": [],
+      "url": "https://raw.githubusercontent.com/eslazarev/wildberries-sdk/73600ac34dd8fb6436e706fc5bd4a5db9b883aac/specs/07-orders-fbw.yaml",
+      "officialUrl": "https://dev.wildberries.ru/api/swagger/yaml/ru/07-orders-fbw.yaml?region=ru"
+    },
+    "08-promotion.yaml": {
+      "sha256": "4b097841f1c487c49405abef5e9c54b58c5764911d9c74c4692ee708e5049ed0",
+      "bytes": 270721,
+      "name": "promotion",
+      "hosts": [
+        "https://advert-api.wildberries.ru",
+        "https://advert-api-sandbox.wildberries.ru",
+        "https://advert-media-api.wildberries.ru",
+        "https://dp-calendar-api.wildberries.ru"
+      ],
+      "refs": 125,
+      "unresolved": [],
+      "url": "https://raw.githubusercontent.com/eslazarev/wildberries-sdk/73600ac34dd8fb6436e706fc5bd4a5db9b883aac/specs/08-promotion.yaml",
+      "officialUrl": "https://dev.wildberries.ru/api/swagger/yaml/ru/08-promotion.yaml?region=ru"
+    },
+    "09-communications.yaml": {
+      "sha256": "e0547e42dd25200d2494cbc5463e423e3f7cd5e02007626c9548a935e002a5b3",
+      "bytes": 191268,
+      "name": "communications",
+      "hosts": [
+        "https://feedbacks-api.wildberries.ru",
+        "https://feedbacks-api-sandbox.wildberries.ru",
+        "https://buyer-chat-api.wildberries.ru",
+        "https://returns-api.wildberries.ru"
+      ],
+      "refs": 58,
+      "unresolved": [],
+      "url": "https://raw.githubusercontent.com/eslazarev/wildberries-sdk/73600ac34dd8fb6436e706fc5bd4a5db9b883aac/specs/09-communications.yaml",
+      "officialUrl": "https://dev.wildberries.ru/api/swagger/yaml/ru/09-communications.yaml?region=ru"
+    },
+    "10-rates.yaml": {
+      "sha256": "48716be16bfb84ecbd8f287a15e54429b01c1824d3fafe920e1a73229f8e0bdf",
+      "bytes": 44231,
+      "name": "rates",
+      "hosts": [
+        "https://common-api.wildberries.ru"
+      ],
+      "refs": 32,
+      "unresolved": [],
+      "url": "https://raw.githubusercontent.com/eslazarev/wildberries-sdk/73600ac34dd8fb6436e706fc5bd4a5db9b883aac/specs/10-rates.yaml",
+      "officialUrl": "https://dev.wildberries.ru/api/swagger/yaml/ru/10-rates.yaml?region=ru"
+    },
+    "11-analytics.yaml": {
+      "sha256": "98fbb4bc33ec2e01e8425dae38d9256a46e75fa2625471993c6f1d19cc873c2b",
+      "bytes": 290441,
+      "name": "analytics",
+      "hosts": [
+        "https://seller-analytics-api.wildberries.ru"
+      ],
+      "refs": 121,
+      "unresolved": [],
+      "url": "https://raw.githubusercontent.com/eslazarev/wildberries-sdk/73600ac34dd8fb6436e706fc5bd4a5db9b883aac/specs/11-analytics.yaml",
+      "officialUrl": "https://dev.wildberries.ru/api/swagger/yaml/ru/11-analytics.yaml?region=ru"
+    },
+    "12-reports.yaml": {
+      "sha256": "07f737cd6cc5888d124e3b29dcc171fbcbcd7bde9b61978df432a6fcdd245bc0",
+      "bytes": 151560,
+      "name": "reports",
+      "hosts": [
+        "https://statistics-api.wildberries.ru",
+        "https://statistics-api-sandbox.wildberries.ru",
+        "https://seller-analytics-api.wildberries.ru"
+      ],
+      "refs": 53,
+      "unresolved": [],
+      "url": "https://raw.githubusercontent.com/eslazarev/wildberries-sdk/73600ac34dd8fb6436e706fc5bd4a5db9b883aac/specs/12-reports.yaml",
+      "officialUrl": "https://dev.wildberries.ru/api/swagger/yaml/ru/12-reports.yaml?region=ru"
+    },
+    "13-finances.yaml": {
+      "sha256": "27350fecfae8968f4ffc156c6b0b8bff615712aa773eed4325c472c43e5d0d5e",
+      "bytes": 83024,
+      "name": "finances",
+      "hosts": [
+        "https://finance-api.wildberries.ru",
+        "https://documents-api.wildberries.ru"
+      ],
+      "refs": 24,
+      "unresolved": [],
+      "url": "https://raw.githubusercontent.com/eslazarev/wildberries-sdk/73600ac34dd8fb6436e706fc5bd4a5db9b883aac/specs/13-finances.yaml",
+      "officialUrl": "https://dev.wildberries.ru/api/swagger/yaml/ru/13-finances.yaml?region=ru"
+    },
+    "14-wbd.yaml": {
+      "sha256": "b8dc1eea23c15a764d81ff683475b8abcdae4eabc0e64c094c825ae7f2a77c78",
+      "bytes": 130323,
+      "name": "wbd",
+      "hosts": [
+        "https://devapi-digital.wildberries.ru"
+      ],
+      "refs": 36,
+      "unresolved": [],
+      "url": "https://raw.githubusercontent.com/eslazarev/wildberries-sdk/73600ac34dd8fb6436e706fc5bd4a5db9b883aac/specs/14-wbd.yaml",
+      "officialUrl": "https://dev.wildberries.ru/api/swagger/yaml/ru/14-wbd.yaml?region=ru"
+    }
+  }
+}
