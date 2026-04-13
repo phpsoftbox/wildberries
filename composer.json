@@ -1,0 +1,48 @@
+{
+    "name": "phpsoftbox/wildberries",
+    "description": "Wildberries API client component for the PhpSoftBox framework",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Anton K.",
+            "email": "inspector-who@mail.ru"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "php": "^8.4",
+        "phpsoftbox/collection": "dev-master",
+        "psr/http-client": "^1.0",
+        "psr/http-factory": "^1.0",
+        "psr/http-message": "^2.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.93",
+        "phpsoftbox/cli-app": "dev-master",
+        "phpsoftbox/code-generator": "dev-master",
+        "phpsoftbox/cs-fixer": "^1.1.0",
+        "phpsoftbox/http-message": "dev-master",
+        "phpunit/phpunit": "^11.2",
+        "symfony/yaml": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "PhpSoftBox\\Wildberries\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PhpSoftBox\\Wildberries\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "cs:fix": "vendor/bin/psb-cs-fixer fix",
+        "cs:check": "vendor/bin/psb-cs-fixer check --diff"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
