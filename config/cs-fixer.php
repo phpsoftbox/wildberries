@@ -12,4 +12,11 @@ return new class extends AbstractCsFixerHandler {
             ->ignoreVCS(true)
             ->name('*.php');
     }
+
+    protected function extendRules(array $rules): array
+    {
+        $rules['PhpSoftBox/sql_format'] = true;
+
+        return $rules;
+    }
 };
