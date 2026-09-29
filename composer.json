@@ -14,16 +14,16 @@
     },
     "require": {
         "php": "^8.5",
-        "phpsoftbox/collection": "dev-master",
+        "phpsoftbox/collection": "^1.0",
         "psr/http-client": "^1.0",
         "psr/http-factory": "^1.0",
         "psr/http-message": "^2.0"
     },
     "require-dev": {
-        "phpsoftbox/cli-app": "dev-master",
-        "phpsoftbox/code-generator": "dev-master",
-        "phpsoftbox/cs-fixer": "^1.2.1",
-        "phpsoftbox/http-message": "dev-master",
+        "phpsoftbox/cli-app": "^1.0",
+        "phpsoftbox/code-generator": "^1.0",
+        "phpsoftbox/cs-fixer": "^1.2.2",
+        "phpsoftbox/http-message": "^1.0",
         "phpunit/phpunit": "^13.3",
         "symfony/yaml": "^7.0"
     },
@@ -47,6 +47,5 @@
         "cs:fix": "vendor/bin/psb-cs-fixer fix",
         "cs:check": "vendor/bin/psb-cs-fixer check --diff"
     },
-    "minimum-stability": "dev",
     "prefer-stable": true
 }
