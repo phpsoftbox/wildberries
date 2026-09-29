@@ -153,6 +153,9 @@ $response = $client->marketplace()
 ```
 
 ## Генерация DTO
+
+Генератор — инструмент сопровождения пакета: ему нужны `phpsoftbox/cli-app`, `phpsoftbox/code-generator`, `symfony/yaml`
+(в `suggest`, в `require` не входят). Клиенту API эти зависимости не нужны.
 DTO генерируются из локальных OpenAPI YAML файлов в `docs/`:
 
 ```bash
