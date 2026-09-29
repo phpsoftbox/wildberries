@@ -27,6 +27,11 @@
         "phpunit/phpunit": "^13.3",
         "symfony/yaml": "^7.0"
     },
+    "suggest": {
+        "phpsoftbox/cli-app": "Required for the wildberries:openapi:generate-dto DTO generator command (maintainer tooling).",
+        "phpsoftbox/code-generator": "Required for DTO generation from OpenAPI (maintainer tooling).",
+        "symfony/yaml": "Required to read YAML OpenAPI specs during DTO generation."
+    },
     "autoload": {
         "psr-4": {
             "PhpSoftBox\\Wildberries\\": "src/"
